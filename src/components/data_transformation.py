@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
-
+from src.utils import save_obj
 from src.exception import CustomException
 from src.logger import logging
 import os
@@ -81,6 +81,12 @@ class DataTransformation:
             logging.info(f"Saved preprocessing object.")
 
             # Save preprocessing_obj using the save_obj function if available
+            save_obj(
+
+                file_path=self.data_transformation_config.preprocessor_obj_file_path,
+                obj=preprocessing_obj
+
+            )
 
             return (
                 train_arr,
