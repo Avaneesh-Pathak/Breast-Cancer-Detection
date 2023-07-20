@@ -1,0 +1,19 @@
+[2023-07-20 13:20:12,865] 148 numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-07-20 13:20:12,865] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2023-07-20 13:20:14,208] 27 root - INFO - Entered the data ingestion method or components
+[2023-07-20 13:20:14,215] 31 root - INFO - Read The datasets as dataframe
+[2023-07-20 13:20:14,230] 37 root - INFO - Train Test Split initiated
+[2023-07-20 13:20:14,246] 45 root - INFO - Ingestion of the data is completed
+[2023-07-20 13:20:14,258] 59 root - INFO - Read data completed
+[2023-07-20 13:20:14,258] 61 root - INFO - Obtaining preprocessing object
+[2023-07-20 13:20:14,263] 39 root - INFO - Numerical columns: ['mean radius' 'mean texture' 'mean perimeter' 'mean area'
+ 'mean smoothness' 'mean compactness' 'mean concavity'
+ 'mean concave points' 'mean symmetry' 'mean fractal dimension'
+ 'radius error' 'texture error' 'perimeter error' 'area error'
+ 'smoothness error' 'compactness error' 'concavity error'
+ 'concave points error' 'symmetry error' 'fractal dimension error'
+ 'worst radius' 'worst texture' 'worst perimeter' 'worst area'
+ 'worst smoothness' 'worst compactness' 'worst concavity'
+ 'worst concave points' 'worst symmetry' 'worst fractal dimension']
+[2023-07-20 13:20:14,265] 71 root - INFO - Applying preprocessing object on the dataframe.
+[2023-07-20 13:20:14,277] 81 root - INFO - Saved preprocessing object.
