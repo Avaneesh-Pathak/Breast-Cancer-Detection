@@ -12,14 +12,12 @@ from src.exception import CustomException
 from src.logger import logging
 import os
 
-# from src.utils import save_obj
-
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
+    preprocessor_obj_file_path = os.path.join('artifacts', "preprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
-        self.data_transformation_config=DataTransformationConfig()
+        self.data_transformation_config = DataTransformationConfig()
 
     def get_data_transformer_object(self):
         '''
@@ -82,10 +80,8 @@ class DataTransformation:
 
             # Save preprocessing_obj using the save_obj function if available
             save_obj(
-
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
                 obj=preprocessing_obj
-
             )
 
             return (
